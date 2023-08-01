@@ -3,6 +3,15 @@
 	margin: 0;
 }
 
+.hidemobile {
+    display: inline;
+  }
+
+  
+.showmobile { 
+    display: none; 
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -341,5 +350,127 @@ and (min-width:768px) {
 
     .button {
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*Стиль для мобилки*/
+
+    .hidemobile {
+        visibility: hidden;
+        display: none;
+      }
+
+    .showmobile { 
+        display: inline; 
+    }
+
+    .header {
+        height: 74px;
+        gap: 50px;
+        justify-content: space-around;
+    }
+    
+    .logo {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        gap: 41px;
+    }
+    
+    .center {
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+    }
+
+    .background {
+        height: 363px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .group_10 {
+        gap: 15px;
+        padding-top: 148px;
+        padding-bottom: 149px;
+        align-items: center
+    }
+    
+    .group_10_text {
+        font-size: 38px;
+        width: 236px;
+    }
+    
+    .text_format {
+        font-size: 20px;
+    }
+
+    .offer {
+        margin-top: 64px;
+        grid-template-columns: repeat(1, 343px);
+        gap: 32px;
+    }
+    
+    .women {
+        width: 343px;
+        height: 247px;
+    }
+    
+    .man {
+        width: 343px;
+        height: 247px;
+    }
+    
+    .kid {
+        width: 343px;
+        height: 247px;
+    }
+    
+    .accessories {
+        width: 343px;
+        height: 111px;
+    }
+    
+    .text__position__1__row {
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text__position__2__row {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products__center {
+        margin-top:64px;
+    }
+    
+    .products__title__1 {
+        margin-bottom: 3.3px;
+    }
+    
+    .products__title__2 {
+        margin-bottom: 64.7px;
+    }
+    
+    .goods {
+        grid-template-columns: repeat(1, 359px);
+        gap: 16.61px;
+        margin-bottom: 40.61px;
+    }
+   
+    .goods__img {
+        height: 418.833px;
+    }
+    
+    .title__and__price {
+        gap: 14px;
+    }
+    
+    .button {
+        margin-bottom: 85px;
     }
 }
